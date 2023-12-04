@@ -1,0 +1,18 @@
+<div>
+    <button (click)="logout()">cerrar session</button>
+    <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
+</div>
+
+<ul>
+    @for (book of books;track book._id) {
+        <li>
+            <img src={{book.img}} style=width:100px;> <br>
+
+            {{book.titulo}} <br>
+            {{book.autor}}
+            
+        </li>
+    }
+</ul>
